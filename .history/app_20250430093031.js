@@ -1,11 +1,11 @@
-//function mediaDaNota(nota0, nota1, nota2, nota3){
+function mediaDaNota(nota0, nota1, nota2, nota3){
 
 //const = tipo de variavel, é imutável
 //mediaFinal = nome da variável em camelcase
 //o que ela faz?
 //soma das variáveis e dividide pela quantidade de variáveis
 
-//const mediaFinal = (nota0 + nota1 + nota2 + nota3) / 4
+const mediaFinal = (nota0 + nota1 + nota2 + nota3) / 4
 
 //if = condição
 //(mediaFinal >=7) = a condição ta verificando se a variavel 'mediaFinal' é maior ou igual a 7
@@ -13,11 +13,11 @@
 //else= se nâo atender a nenhuma condição anterior ela entra no else
 //return= informe a resposta final
 
-//if (mediaFinal >=7) {
-//        return "Aprovado"
-//    } else {
-//        return "Reprovado"
-//    }
+if (mediaFinal >=7) {
+        return "Aprovado"
+    } else {
+        return "Reprovado"
+    }
 
 //return mediaFinal >=7 ? "Aprovado" : "Reprovado";
 
@@ -32,36 +32,29 @@
 
 
 
-function classificacao() {
+
+function classificacao(nota1, nota2, nota3) {
     const nota1 = Number(document.getElementById("nota1").value);
     const nota2 = Number(document.getElementById("nota2").value);
     const nota3 = Number(document.getElementById("nota3").value);
-    const resultadoFinal = document.getElementById("resultadoFinal")
-
+    const resultadoFinal = document.getElementById("resultadoFinal");
+    let aprovacao;
+        
     const media = (nota1 + nota2 + nota3)/3;
-    if (nota1 > 10 || nota2 > 10 || nota3 > 10 || nota1 < 0 || nota2 < 0 || nota3 < 0
-        || isNaN(nota1) || isNaN(nota2) || isNaN(nota3)) {
+    if (nota1 > 10 || nota2 > 10 || nota3 > 10 || nota1 < 0 || nota2 < 0 || nota3 < 0 || isNaN(nota1) || isNaN(nota2) || isNaN(nota3)) {
         alert("Digite uma nota válida!");
     } else {
-        aprovacao = media > 7 ? "Aprovado!" : "Reprovado.";
-        resultadoFinal.innerHTML = `A sua media foi de ${media.toFixed(2)}. ${aprovacao}`;
+ //   if (media > 7) {
+//        aprovacao = "Aprovado!";
+//    } else {
+//        aprovacao = "Reprovado!";
+//    }
+aprovacao = media > 7 ? "Aprovado!" : "Reprovado.";
+
+numer > 0 ? "Positivo" : numero = 0 ? "zero" : "negativo";
+
+    resultadoFinal.innerHTML = `A sua media foi de ${media.toFixed(2)}. ${aprovacao}`
     }
 }
 
-
-// function tabuada() {
-//     const tabuadaInput = Number(document.getElementById("tabuada-input").value);
-//     let i = 1;
-//     let resultado = [];
-
-//     while(i <= 10) {
-//         resultado += tabuadaInput * i;
-//         i++;
-//     }
-
-//     for(let i = 1; i <= 10; i++) {
-//         resultado += tabuadaInput * i;
-//     }
-// }
-
-
+classificacao(10, 9, 8)

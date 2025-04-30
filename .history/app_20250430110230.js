@@ -36,7 +36,8 @@ function classificacao() {
     const nota1 = Number(document.getElementById("nota1").value);
     const nota2 = Number(document.getElementById("nota2").value);
     const nota3 = Number(document.getElementById("nota3").value);
-    const resultadoFinal = document.getElementById("resultadoFinal")
+    const resultadoFinal = document.getElementById("resultadoFinal");
+    let aprovacao;
 
     const media = (nota1 + nota2 + nota3)/3;
     if (nota1 > 10 || nota2 > 10 || nota3 > 10 || nota1 < 0 || nota2 < 0 || nota3 < 0
@@ -48,20 +49,13 @@ function classificacao() {
     }
 }
 
+function tabuada() {
+    const tabuadaInput = Number(document.getElementById("tabuada-input").value);
+    let i = 1;
+    let resultado = [];
 
-// function tabuada() {
-//     const tabuadaInput = Number(document.getElementById("tabuada-input").value);
-//     let i = 1;
-//     let resultado = [];
-
-//     while(i <= 10) {
-//         resultado += tabuadaInput * i;
-//         i++;
-//     }
-
-//     for(let i = 1; i <= 10; i++) {
-//         resultado += tabuadaInput * i;
-//     }
-// }
-
-
+    while(i < 10) {
+        resultado += tabuadaInput * i;
+        i++;
+    }
+}

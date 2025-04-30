@@ -49,19 +49,22 @@ function classificacao() {
 }
 
 
-// function tabuada() {
-//     const tabuadaInput = Number(document.getElementById("tabuada-input").value);
-//     let i = 1;
-//     let resultado = [];
+function tabuada() {
+    const tabuadaInput = Number(document.getElementById("tabuada-input").value);
+    let i = 1;
+    let resultado = [];
 
-//     while(i <= 10) {
-//         resultado += tabuadaInput * i;
-//         i++;
-//     }
+    while(i <= 10) {
+        resultado += tabuadaInput * i;
+        i++;
+    }
 
-//     for(let i = 1; i <= 10; i++) {
-//         resultado += tabuadaInput * i;
-//     }
-// }
+    for(let i = 1; i <= 10; i++) {
+        resultado += tabuadaInput * i;
+    }
+}
 
 
+function  {
+    
+}

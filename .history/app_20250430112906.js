@@ -32,7 +32,7 @@
 
 
 
-function classificacao() {
+;function classificacao() {
     const nota1 = Number(document.getElementById("nota1").value);
     const nota2 = Number(document.getElementById("nota2").value);
     const nota3 = Number(document.getElementById("nota3").value);
@@ -49,19 +49,22 @@ function classificacao() {
 }
 
 
-// function tabuada() {
-//     const tabuadaInput = Number(document.getElementById("tabuada-input").value);
-//     let i = 1;
-//     let resultado = [];
+function tabuada() {
+    const tabuadaInput = Number(document.getElementById("tabuada-input").value);
+    let i = 1;
+    let resultado = [];
 
-//     while(i <= 10) {
-//         resultado += tabuadaInput * i;
-//         i++;
-//     }
+    while(i <= 10) {
+        resultado += tabuadaInput * i;
+        i++;
+    }
 
-//     for(let i = 1; i <= 10; i++) {
-//         resultado += tabuadaInput * i;
-//     }
-// }
+    for(let i = 1; i <= 10; i++) {
+        resultado += tabuadaInput * i;
+    }
+}
 
 
+function mostrarIngredientes(lista) {
+    
+}
