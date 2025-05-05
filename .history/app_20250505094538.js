@@ -66,22 +66,6 @@ function numerosPares() {
 }
 
 
-function tabuada() {
-    const tabuadaInput = Number(document.getElementById("tabuada-input").value);
-    let resultado = [];
-
-    for (let i = 1; i <= 10; i++) {
-        resultado.push(`${tabuadaInput} x ${i} = ${tabuadaInput * i}`);
-    }
-
-    const resultadoTabuada = document.getElementById("resultado-tabuada");
-    resultadoTabuada.innerHTML = resultado.join("<br>");
-}
-
-
-
-
-
 // function tabuada() {
 //     const tabuadaInput = Number(document.getElementById("tabuada-input").value);
 //     let i = 1;

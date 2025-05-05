@@ -48,39 +48,21 @@ function classificacao() {
     }
 }
 
+// function numerosPares() {
+//     const numeroInput = Number(document.getElementById("numero-input").value);
+//     let i = 2;
+//     let resultado = [];
+//     const numerosPares = document.getElementById("numeros-pares");
 
-function numerosPares() {
-    const numeroInput = Number(document.getElementById("numberInput").value); // Corrigido aqui
-    let i = 2;
-    let resultado = [];
-    const numerosPares = document.getElementById("numeros-pares");
+//     while(i <= numeroInput) {
+//         if (i % 2 == 0) {
+//             resultado += i;    
+//         } 
+//         i++;
+//     }
 
-    while (i <= numeroInput) {
-        if (i % 2 === 0) {
-            resultado.push(i); // Usar push em vez de +=
-        }
-        i++;
-    }
-
-    numerosPares.innerHTML = `Os números pares são: ${resultado.join(", ")}`;
-}
-
-
-function tabuada() {
-    const tabuadaInput = Number(document.getElementById("tabuada-input").value);
-    let resultado = [];
-
-    for (let i = 1; i <= 10; i++) {
-        resultado.push(`${tabuadaInput} x ${i} = ${tabuadaInput * i}`);
-    }
-
-    const resultadoTabuada = document.getElementById("resultado-tabuada");
-    resultadoTabuada.innerHTML = resultado.join("<br>");
-}
-
-
-
-
+//     numerosPares.innerHTML = `Os números pares são ${resultado}`
+// }
 
 // function tabuada() {
 //     const tabuadaInput = Number(document.getElementById("tabuada-input").value);

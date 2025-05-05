@@ -66,21 +66,29 @@ function numerosPares() {
 }
 
 
-function tabuada() {
-    const tabuadaInput = Number(document.getElementById("tabuada-input").value);
-    let resultado = [];
+// function tabuada() {
+//     const tabuadaInput = Number(document.getElementById("tabuada-input").value);
+//     let resultado = [];
+    
+//     let i = 1;
+//     while (i <= 10) {
+//         resultado += tabuadaInput * i;
+//         i++;
+//     }
 
-    for (let i = 1; i <= 10; i++) {
-        resultado.push(`${tabuadaInput} x ${i} = ${tabuadaInput * i}`);
-    }
+//     for (let i = 1; i<= 10; i++) {
+//         resultado += tabuadaInput * i;
+//     }
+// }
 
-    const resultadoTabuada = document.getElementById("resultado-tabuada");
-    resultadoTabuada.innerHTML = resultado.join("<br>");
-}
+// let numero = '10';
+// let numero1 = 10;
 
-
-
-
+// if (numero === numero1) {
+//     console.log(true); 
+// } else {
+//     console.log(false);
+// }
 
 // function tabuada() {
 //     const tabuadaInput = Number(document.getElementById("tabuada-input").value);
